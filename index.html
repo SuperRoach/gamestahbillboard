@@ -27,6 +27,7 @@
             color: #FFF;
             background-image: url('images/gamestahtvclear.png');
             background-position: top center;
+            background-repeat: no-repeat;
         }
 
         #containers {
@@ -90,12 +91,14 @@
         #channelnav li a {
             margin: 0px auto;
             color: white;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
             display: block;
-            width: 220px;
+            width: 270px;
+            letter-spacing: -1px;
             padding-right: 25px;
-            transition: background 250ms, border-color 500ms;
+            padding-left: 25px;
+            transition: background 200ms, border-color 500ms;
             text-align: center;
         }
 
@@ -103,10 +106,6 @@
             background: #DEDEDE;
             color: red;
             border-bottom: 3px solid lightgreen;
-        }
-
-        #channelnav li a.neebertv {
-            width: 160px;
         }
 
         #zowielink a {
@@ -124,6 +123,10 @@
             position: absolute;
             top: 27px;
             left: 985px;
+        }
+
+        @media screen and (max-width: 1079px) {
+          #chat { display: none }
         }
     </style>
 
@@ -148,7 +151,6 @@
                     <li><a href="#gtv1">GAMESTAHTV1</a></li>
                     <li><a href="#gtv2">GAMESTAHTV2</a></li>
                     <li><a href="#gtv3">GAMESTAHTV2</a></li>
-                    <li><a href="#neebertv" class="neebertv">NEEBERTV</a></li>
                 </ul>
             </div>
             <div id="twitchcontainer">
@@ -164,7 +166,7 @@
                     </iframe>
                 </div>
                 <div id="chat">
-                    <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/GamestahTV1/chat" width="300" height="480">
+                    <iframe frameborder="0" scrolling="no" id="chat_embed" src="https://www.twitch.tv/gamestahtv1/chat" width="300" height="480">
                     </iframe>
                 </div>
             </div>
